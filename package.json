@@ -1,0 +1,33 @@
+{
+  "name": "forkio",
+  "version": "1.0.0",
+  "description": "Step project Forkio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Yaroslav_Sokol/forkio.git"
+  },
+  "author": "Ярослав Сокол, Антон Антимийчук",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Yaroslav_Sokol/forkio/issues"
+  },
+  "homepage": "https://gitlab.com/Yaroslav_Sokol/forkio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.63.6"
+  }
+}
