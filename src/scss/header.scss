@@ -1,0 +1,47 @@
+.header {
+    &__navbar {
+        @include flex-sb;
+        padding: 31px 0;
+    }
+
+    &__logo {
+        &_link {
+            background-image: url('../img/logo.png');
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding: 6px 0px 6px 60px;
+            color: $header-main-color;
+            font-family: Lato;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 16px;
+        }
+    }
+
+    &__menu {
+        @include flex-ai-center;
+        gap: 48px;
+    }
+
+    &__button {
+        padding: 11px 20px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 17px; 
+        border-radius: 40px;
+        color: $main-color-text;
+        background-color: $header-main-color;   
+    }
+
+    &__list {
+        @include flex-ai-center;
+        gap: 48px;
+        &_link {
+            color: $header-main-color;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 17px;
+        }
+    }
+}

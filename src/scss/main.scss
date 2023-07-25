@@ -1,0 +1,22 @@
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'mixin.scss';
+@import 'header.scss';
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: $main-color-text;
+    background-image: url('../img/background-img.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    a {
+        text-decoration: none;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
