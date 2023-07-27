@@ -1,0 +1,60 @@
+.banner {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+        padding-top: 83px;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 82px;
+        font-weight: 700;
+        line-height: 82px;
+    }
+    
+    &__subtitle {
+        color: $header-main-color;
+        font-family: Lato;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 30px;  
+    }
+
+    &__information {
+        color: $text-description-color;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+
+    &__button {
+        @include flex-column-center;
+        gap: 19px;
+        padding-top: 418px;
+        &_link {
+            background-color: $header-main-color;
+            border-radius: 40px;
+            border: 1px, solid, $header-main-color;
+            font-size: 21px; 
+            font-weight: 700;
+            line-height: 22px;
+            padding: 23px 61px;
+        }
+
+        &_link:hover {
+            background-color: $main-color-text;
+            color: $header-main-color;
+        }
+
+        &_information {
+            color: $text-description-color;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 15px;
+        }
+    }
+}

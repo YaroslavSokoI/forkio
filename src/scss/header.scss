@@ -1,7 +1,7 @@
 .header {
     &__navbar {
         @include flex-sb;
-        padding: 31px 0;
+        padding: 30px 0;
     }
 
     &__logo {
@@ -16,10 +16,14 @@
             font-weight: 700;
             line-height: 16px;
         }
+        &_link:hover {
+            color: $main-color-text;
+            background-image: url('../img/logo-hover.png');
+        }
     }
 
     &__menu {
-        @include flex-ai-center;
+        @include flex-row-center;
         gap: 48px;
     }
 
@@ -30,18 +34,28 @@
         font-weight: 700;
         line-height: 17px; 
         border-radius: 40px;
+        border: 1px, solid, $header-main-color;
         color: $main-color-text;
         background-color: $header-main-color;   
     }
 
+    &__button:hover {
+        color: $header-main-color;
+        background-color: $main-color-text;
+    }
+
     &__list {
-        @include flex-ai-center;
+        @include flex-row-center;
         gap: 48px;
         &_link {
             color: $header-main-color;
             font-size: 16px;
             font-weight: 700;
             line-height: 17px;
+        }
+
+        &_link:hover {
+            color: $main-color-text;
         }
     }
 }

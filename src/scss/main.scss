@@ -2,16 +2,18 @@
 @import 'variables.scss';
 @import 'mixin.scss';
 @import 'header.scss';
+@import 'banner.scss';
 
 body {
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
     color: $main-color-text;
     background-image: url('../img/background-img.jpg');
-    background-size: 100%;
+    background-size: 100% 800px;
     background-repeat: no-repeat;
     
-    a {
+    a { 
+        color: $main-color-text;
         text-decoration: none;
     }
 
