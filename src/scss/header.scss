@@ -1,30 +1,29 @@
 .header {
-    &__navbar {
+    &__nav {
+        height: 87px
+    }
+    &__elements {
         @include flex-sb;
         padding: 30px 0;
     }
 
     &__logo {
+        padding: 10px 0px 10px 60px;
+        background-image: url('../img/logo.png');
+        background-repeat: no-repeat;
+        background-position: left center;
         &_link {
-            background-image: url('../img/logo.png');
-            background-repeat: no-repeat;
-            background-position: left center;
-            padding: 6px 0px 6px 60px;
             color: $header-main-color;
             font-family: Lato;
             font-size: 24px;
             font-weight: 700;
             line-height: 16px;
         }
-        &_link:hover {
-            color: $main-color-text;
-            background-image: url('../img/logo-hover.png');
-        }
     }
 
-    &__menu {
-        @include flex-row-center;
-        gap: 48px;
+    &__logo:hover {
+        color: $main-color-text;
+        background-image: url('../img/logo-hover.png');
     }
 
     &__button {
@@ -46,6 +45,10 @@
 
     &__list {
         @include flex-row-center;
+        justify-content: center;
+        position: relative;
+        bottom: 59px;
+        left: calc(50% / 2 - 180px);
         gap: 48px;
         &_link {
             color: $header-main-color;
@@ -56,6 +59,127 @@
 
         &_link:hover {
             color: $main-color-text;
+        }
+    }
+
+    &__burger {
+        display: none;
+    }
+
+    @media only screen and (max-width: 992px) {
+        background-color: #27262A;
+        &__nav {
+            padding: 0px 0px 38px 0;
+        }
+        &__elements {
+            padding: 23px 0;
+        }
+        &__list {
+            position: unset;
+            justify-content: space-between;
+        }
+    }
+
+    @media only screen and (max-width: 556px) {
+        &__list {
+            gap: 0;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        &__burger {
+            display: block;
+            position: relative;
+            width: 26px;
+            height: 21px;
+            span {
+                position: absolute;
+                left: 11px;
+                background-color: #fff;
+                width: 15px;
+                height: 3px;
+                border-radius: 5px;
+                transition: 0.3s ease 0s;
+            }
+        }
+
+        &__burger::before, 
+        &__burger::after {
+            content: '';
+            background-color: #fff;
+            position: absolute;
+            top: 9px;
+            width: 26px;
+            height: 3px;
+            border-radius: 5px;
+            transition: 0.3s ease 0s;
+        }
+
+        &__burger::before {
+            top: 18px;
+        }
+
+        &__burger.active::before {
+            border-radius: 0;
+            transform: rotate(45deg);
+            top: 8px;
+        }
+
+        &__burger.active::after {
+            border-radius: 0;
+            transform: rotate(-45deg);
+            top: 8px;
+        }
+
+        &__burger.active span {
+            transform: scale(0);
+        }
+        
+        &__logo {
+            padding: 20px 0 20px 43px;
+            &_link {
+                display: none;
+            }
+        }
+
+        &__nav {
+            padding: 0px;
+        }
+
+        &__list {
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            padding: 0;
+
+            &_link {
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 26px;
+                color: $main-color-text;
+            }
+
+            &_link:active, 
+            &_link:focus {
+                color: $header-main-color;
+            }
+
+            li:active, li:focus {
+                border-left: 4px solid $header-main-color;
+            }
+
+            li {
+                background-color: #333333;
+                padding: 31px 0 31px 40px;
+                border-bottom:  1px solid #3B3B3B;
+            }
+        }
+
+        &__list.active {
+            display: block;
         }
     }
 }

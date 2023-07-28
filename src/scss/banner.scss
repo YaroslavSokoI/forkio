@@ -57,4 +57,56 @@
             line-height: 15px;
         }
     }
+
+    @media only screen and (max-width: 992px) {
+        &__content {
+            padding-top: 69px;
+        }
+
+        &__title {
+            font-size: 72px;
+            line-height: 72px;
+        }
+
+        &__subtitle {
+            font-size: 24px;
+            line-height: 24px;
+        }
+
+        &__information {
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        &__button {
+            padding-top: 422px;
+        }
+    }
+
+    @media only screen and (max-width: 593px) {
+        &__button {
+            padding-top: 400px;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        &__title {
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        &__subtitle {
+            font-family: Montserrat;
+            font-size: 18px;
+        }
+
+        &__button {
+            padding-top: 470px;
+            &_link {
+                padding: 13px 29px;
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+    }
 }

@@ -9,7 +9,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: $main-color-text;
     background-image: url('../img/background-img.jpg');
-    background-size: 100% 800px;
+    background-position-x: center;
+    background-size: 1920px 800px;
     background-repeat: no-repeat;
     
     a { 
@@ -19,6 +20,21 @@ body {
 
     .container {
         max-width: 1200px;
+        padding: 0 10px;
         margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 992px) {
+        .container {
+            max-width: 728px;
+            padding: 0 20px;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .container {
+            max-width: 290px;
+            padding: 0 15px;
+        }
     }
 }
