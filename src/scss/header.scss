@@ -8,22 +8,25 @@
     }
 
     &__logo {
-        padding: 10px 0px 10px 60px;
-        background-image: url('../img/logo.png');
-        background-repeat: no-repeat;
-        background-position: left center;
+        &_png {
+            display: none;
+        }
         &_link {
             color: $header-main-color;
             font-family: Lato;
             font-size: 24px;
             font-weight: 700;
             line-height: 16px;
+            padding: 10px 0px 10px 60px;
+            background-image: url('../img/logo.png');
+            background-repeat: no-repeat;
+            background-position: left center;
         }
-    }
 
-    &__logo:hover {
-        color: $main-color-text;
-        background-image: url('../img/logo-hover.png');
+        &_link:hover {
+            background-image: url('../img/logo-hover.png');
+            color: $main-color-text;
+        }
     }
 
     &__button {
@@ -136,7 +139,10 @@
         }
         
         &__logo {
-            padding: 20px 0 20px 43px;
+            padding: 0;
+            &_png {
+                display: block;
+            }
             &_link {
                 display: none;
             }
@@ -151,7 +157,7 @@
             flex-direction: column;
             align-items: flex-start;
             position: relative;
-            top: 0px;
+            top: -4px;
             left: 0px;
             padding: 0;
 
@@ -168,7 +174,7 @@
             }
 
             li:active, li:focus {
-                border-left: 4px solid $header-main-color;
+                border-left: 6px solid $header-main-color;
             }
 
             li {
