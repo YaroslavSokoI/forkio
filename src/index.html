@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://localhost:3002/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@400;700&display=swap"
         rel="stylesheet">
@@ -50,6 +53,133 @@
                 </div>
             </div>
         </section>
+        <section class="revol-editor">
+            <div class="container">
+              <div class="content">
+                <div class="content__title">Revolutionary editor</div>
+                <div class="content__description">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</div>
+                <div class="content__btn-block">
+                  <a class="btn-item" href="#">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"  class="btn-svg">
+                      <path d="M8 16a2 2 0 0 0 1.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 0 0 8 16ZM3 5a5 5 0 0 1 10 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.519 1.519 0 0 1 13.482 13H2.518a1.516 1.516 0 0 1-1.263-2.36l1.703-2.554A.255.255 0 0 0 3 7.947Zm5-3.5A3.5 3.5 0 0 0 4.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.017.017 0 0 0-.003.01l.001.006c0 .002.002.004.004.006l.006.004.007.001h10.964l.007-.001.006-.004.004-.006.001-.007a.017.017 0 0 0-.003-.01l-1.703-2.554a1.745 1.745 0 0 1-.294-.97V5A3.5 3.5 0 0 0 8 1.5Z"></path>
+                    </svg>
+                  <span class="btn-item--btn-txt">Notifications</span>
+                  </a>
+                  <a class="btn-item" href="#">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"  class="btn-svg">
+                      <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path>
+                    </svg>
+                    <span class="btn-item--btn-txt">Fork</span>
+                    <span class="btn-item--btn-counter">21</span>
+                  </a>
+                  <div class="btn-flex">
+                    <a class="btn-item" href="#">
+                      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"  class="btn-svg">
+                        <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
+                      </svg>
+                      <span class="btn-item--btn-txt">Star</span>
+                      <span class="btn-item--btn-counter">18</span>
+                    </a>
+                    <button class="btn-list">
+                      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" class="btn-svg">
+                        <path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path>
+                    </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="here-is">
+            <div class="container">
+              <div class="content">
+                <div class="col-2">
+                  <div class="content__title-narrow">&lt;Here is what you get&gt;</Here></div>
+                  <div class="content__description">
+                    <div class="content__description_item">
+                      <div class="img-wrapper"><img src="./img/icon1 1.png"></div>
+                      <div class="text-box">
+                        <h3>Creatred to Make The Web Better</h3>
+                        <p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. </p>
+                      </div>
+                    </div>
+                    <div class="content__description_item">
+                      <div class="img-wrapper"><img src="./img/icon 2.png"></div>
+                      <div class="text-box">
+                        <h3>Incredibly Powerful Tool</h3>
+                        <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
+                      </div>
+                    </div>
+                      <div class="content__description_item">
+                        <div class="img-wrapper"><img src="./img/icon2 1.png"></div>
+                        <div class="text-box">
+                          <h3>Experimental Stuff</h3>
+                          <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
+                        </div>
+                      </div>
+                      <div class="content__description_item">
+                        <div class="img-wrapper"><img src="./img/icon33 1.png"></div>
+                        <div class="text-box">
+                          <h3>Creatred to Make The Web Better</h3>
+                          <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-2 col-2_right">
+                  <div class="content__title-wide">&lt;Here is what you get&gt;</Here></div>
+                  <div class="content_image">
+                    <img src="./img/editor 1.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--Тут пропущена секція-->
+
+        <section class="fork-sub">
+         <div class="container">
+          <div class="content">
+            <div class="content__title">Fork Subscription Pricing</div>
+            <div class="content__price-block">
+              <div class="content__price-block_card">
+                <div class="tariff"><span class="tariff_number">Students</span></div>
+                <div class="price">$29</div>
+                <div class="price_text">per month</div>
+                <div class="vrline"></div>
+                <span class="price_description">Personal License</span>
+                <button class="price_btn">purchase</button>
+              </div>
+              <div class="content__price-block_card">
+                <div class="tariff"><span class="tariff_number">professional</span></div>
+                <div class="price">$59</div>
+                <div class="price_text">per month</div>
+                <div class="vrline"></div>
+                <span class="price_description">Professional License Email Support</span>
+                <button class="price_btn">purchase</button>
+              </div>
+              <div class="content__price-block_card -focused">
+                <div class="tariff"><span class="tariff_number">agency</span></div>
+                <div class="price">$99</div>
+                <div class="price_text">per month</div>
+                <div class="vrline"></div>
+                <span class="price_description">1-12 Team Members Phone Support</span>
+                <button class="price_btn">purchase</button>
+              </div>
+              <div class="content__price-block_card">
+                <div class="tariff"><span class="tariff_number">enterprise</span></div>
+                <div class="price">$159</div>
+                <div class="price_text">per month</div>
+                <div class="vrline"></div>
+                <span class="price_description">Unlimited Team Members 24/ 7 Phone Support</span>
+                <button class="price_btn">purchase</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
     </main>
     <script src="./js/scripts.min.js"></script>
