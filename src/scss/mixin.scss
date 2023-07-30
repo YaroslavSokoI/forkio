@@ -22,3 +22,32 @@
     align-items: center;
     justify-content: right;
 }
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin bg-paralax {
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+@mixin title {
+    margin-bottom: 19px;
+    color: #8D81AC;
+    font-family: $text-content;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+}
+
