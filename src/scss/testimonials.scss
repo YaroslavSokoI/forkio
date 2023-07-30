@@ -1,7 +1,7 @@
 .testimonials {
     background-image: url('../img/testmonials-bg.jpg');
     background-position-x: center;
-    background-size: 1920px 850px;
+    background-size: 1920px 100%;
     background-repeat: no-repeat;
 
     &__title {
@@ -20,6 +20,7 @@
 
     &__card {
         @include flex-column-center;
+        justify-content: flex-end;
         gap: 30px;
         &_text {
             text-align: center;
@@ -34,7 +35,7 @@
     &__footer {
         @include flex-column-center;
         gap: 20px;
-        padding: 120px 0 30px 0;
+        padding-top: 120px;
     }
 
     &__description {
@@ -50,8 +51,40 @@
     &__line {
         content: '';
         display: block;
-        width: 780px;
+        max-width: 780px;
         height: 2px;
         background: #645766;
+    }
+
+    @media only screen and (max-width: 992px) {
+        &__title {
+            font-size: 42px;
+            line-height: 44px; 
+        }
+        
+        &__content {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 60px;
+        }
+
+        &__footer {
+            padding-top: 60px;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        &__title {
+            font-size: 36px;
+            line-height: 48px;
+            padding: 55px 0;
+        }
+
+        &__content {
+            grid-template-columns: 1fr;
+        }
+
+        &__footer {
+            padding-top: 40px;
+        }
     }
 }
